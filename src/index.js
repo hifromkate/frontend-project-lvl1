@@ -18,13 +18,7 @@ const randomNumber = function(min, max) {
   return Math.floor(Math.random() * (max - min + 1) + min);
 };
 
-const isEven = (number) => {
-    if(number % 2 === 0) {
-      return true
-    } else {
-      return false
-    }
-  }
+const isEven = (number) => (number % 2 === 0);
 
 const evenOrNo = () => {
   console.log("Answer \"yes\" if the number is even, otherwise answer \"no\".")

@@ -12,7 +12,9 @@
     "url": "git+https://github.com/notimetoanalyse/frontend-project-lvl1.git"
   },
   "bin": {
-    "brain-games": "bin/brain-games.js"
+    "brain-games": "bin/brain-games.js",
+    "brain-even": "bin/brain-even.js",
+    "brain-calc": "bin/brain-calc.js"
   },
   "author": "",
   "license": "ISC",

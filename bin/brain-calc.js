@@ -1,1 +1,3 @@
-import { calculator, randomNumber } from "../src/index.js"
+import { calculate, greeting, generateRandom, answer, randomElement, randomNumber, counter, userName, calcQuiz } from "../src/index.js"
+greeting();
+calculate();

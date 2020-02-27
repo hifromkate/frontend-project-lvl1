@@ -19,7 +19,7 @@ const randomNumber = (min, max) => {
 };
 
 const greatestInArray = (arr) => {
-  return Math.max.apply(null, arr)
+  return arr.reduce((a, b) => Math.max(a, b))
 };
 
 //brain-games.js
@@ -29,11 +29,11 @@ const evenOrNo = () => {
   console.log("Answer \"yes\" if the number is even, otherwise answer \"no\".");
   evenQuiz()
 
-  while(counter > 0 && counter < 3) {
+  while (counter > 0 && counter < 3) {
     evenQuiz();
   }
 
-  if(counter === 3) {
+  if (counter === 3) {
     console.log(`Congratulations, ${userName}!`);
   }
 }
@@ -48,7 +48,7 @@ const evenQuiz = () => {
   if (isEven(currentRandomNumber) && answer === "yes") {
     console.log("Correct!");
     counter += 1;
-  } else if(!isEven(currentRandomNumber) && answer === "no") {
+  } else if (!isEven(currentRandomNumber) && answer === "no") {
     console.log("Correct!");
     counter += 1;
   } else {
@@ -57,41 +57,41 @@ const evenQuiz = () => {
 }
 
 //brain-calc.js
-  const generateRandom = () => {
+const generateRandom = () => {
 
-    const firstRandomInt = randomNumber(1, 200)
-    const secondRandomInt = randomNumber(1, 200)
-    const mathSigns = ["+", "-", "*"]
-    const randomSign = randomElement(mathSigns)
+  const firstRandomInt = randomNumber(1, 200)
+  const secondRandomInt = randomNumber(1, 200)
+  const mathSigns = ["+", "-", "*"]
+  const randomSign = randomElement(mathSigns)
 
-    if(randomSign === "+") {
-      answer = firstRandomInt + secondRandomInt
-      console.log(`Question: ${firstRandomInt} + ${secondRandomInt}`)
-    } else if(randomSign === "-") {
-      if(firstRandomInt >= secondRandomInt) {
-        answer = firstRandomInt - secondRandomInt;
-        console.log(`Question: ${firstRandomInt} - ${secondRandomInt}`);
-      } else {
-        answer = secondRandomInt - firstRandomInt
-        console.log(`Question: ${secondRandomInt} - ${firstRandomInt}`);
-      }
-    } else if (randomSign === "*") {
-       answer = firstRandomInt * secondRandomInt
-       console.log(`Question: ${firstRandomInt} * ${secondRandomInt}`);
-     }
-  }
-
-  const calcQuiz = () => {
-    generateRandom();
-    let usersResult = readlineSync.question("Your answer: ");
-    if (usersResult == answer) {
-      console.log("Correct!");
-      counter += 1;
+  if (randomSign === "+") {
+    answer = firstRandomInt + secondRandomInt
+    console.log(`Question: ${firstRandomInt} + ${secondRandomInt}`)
+  } else if (randomSign === "-") {
+    if (firstRandomInt >= secondRandomInt) {
+      answer = firstRandomInt - secondRandomInt;
+      console.log(`Question: ${firstRandomInt} - ${secondRandomInt}`);
     } else {
-      console.log(`${usersResult} is the wrong answer ;(. Correct answer was ${answer}`);
-      counter = 0;
+      answer = secondRandomInt - firstRandomInt
+      console.log(`Question: ${secondRandomInt} - ${firstRandomInt}`);
     }
+  } else if (randomSign === "*") {
+    answer = firstRandomInt * secondRandomInt
+    console.log(`Question: ${firstRandomInt} * ${secondRandomInt}`);
   }
+}
+
+const calcQuiz = () => {
+  generateRandom();
+  let usersResult = readlineSync.question("Your answer: ");
+  if (usersResult == answer) {
+    console.log("Correct!");
+    counter += 1;
+  } else {
+    console.log(`${usersResult} is the wrong answer ;(. Correct answer was ${answer}`);
+    counter = 0;
+  }
+}
 
 const calculate = () => {
   calcQuiz();
@@ -104,15 +104,15 @@ const calculate = () => {
 }
 
 //brain-gcd.js
-const findAllDivisors = (number) => {
+const findAllDivisors = (number) => {
   const allDivisors = [];
-  for (let i = 1; i <= number; i++) {
+  for (let i = 1; i <= number; i++) {
     if (number % i === 0) {
       allDivisors.push(i);
     }
   }
   return allDivisors;
- };
+};
 
 const findGreatestDivisor = () => {
   const firstNumber = randomNumber(1, 300);
@@ -122,10 +122,10 @@ const findGreatestDivisor = () => {
 
   const divisorsOfFirst = findAllDivisors(firstNumber);
   const divisorsOfSecond = findAllDivisors(secondNumber);
-  const commonDivisors = divisorsOfFirst.filter(value => divisorsOfSecond.includes(value));
-  const greatestCommonDivisor = greatestInArray(commonDivisors);
+  const commonDivisors = divisorsOfFirst.filter((value) => divisorsOfSecond.includes(value));
+  greatestCommonDivisor = greatestInArray(commonDivisors);
   return greatestCommonDivisor;
- }
+}
 
 const gcdCheck = () => {
   findGreatestDivisor()
@@ -225,14 +225,39 @@ const primeGame = () => {
 
 const playPrimeNumbersGame = () => {
   primeGame();
-  while(counter > 0 && counter < 3) {
+  while (counter > 0 && counter < 3) {
     primeGame();
   }
 
-  if(counter === 3) {
+  if (counter === 3) {
     console.log(`Congratulations, ${userName}!`);
   }
 }
 
-export { evenQuiz, evenOrNo, counter, userName, isEven, greeting, randomNumber, randomElement, calculate, generateRandom, answer, calcQuiz, gcdQuiz, findGreatestDivisor,
-findAllDivisors, greatestCommonDivisor, gcdCheck, playHideANumber, hideANumber, arithmeticProgression, progression, isPrime, primeGame, playPrimeNumbersGame, greatestInArray };
+export {
+  evenQuiz,
+  evenOrNo,
+  counter,
+  userName,
+  isEven,
+  greeting,
+  randomNumber,
+  randomElement,
+  calculate,
+  generateRandom,
+  answer,
+  calcQuiz,
+  gcdQuiz,
+  findGreatestDivisor,
+  findAllDivisors,
+  greatestCommonDivisor,
+  gcdCheck,
+  playHideANumber,
+  hideANumber,
+  arithmeticProgression,
+  progression,
+  isPrime,
+  primeGame,
+  playPrimeNumbersGame,
+  greatestInArray
+};

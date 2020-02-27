@@ -2,13 +2,15 @@
 <a href="https://codeclimate.com/github/codeclimate/codeclimate/maintainability"><img src="https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability" /></a>
 
 # Videos
-## Package installing and running brain-even in terminal:
+## Brain-games:
+https://asciinema.org/a/DyUkMMjBIgY14nZwoztpYcpqs
+## Brain-even game:
 https://asciinema.org/a/fdwsCkSQY7MXsblVaENnR0GxL
-## Brain-calc:
+## Brain-calc game: 
 https://asciinema.org/a/L3qhPDTZv94dUr5VvzMINzjWA
-## Brain-gcd:
+## Brain-gcd (greatest common divisor) game:
 https://asciinema.org/a/QaiTQKeNbgG2JqftuaActFkey
-## Brain-progression:
+## Brain-progression game:
 https://asciinema.org/a/R548tiB136JhqC4Mcp1iDmFt3
-## Brain-prime:
+## Brain-prime game:
 https://asciinema.org/a/jk8cU0BnfYre9aiaW6DtJkCPi

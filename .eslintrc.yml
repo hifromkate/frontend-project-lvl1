@@ -1,5 +1,3 @@
----
-
 plugins:
   # https://github.com/jest-community/eslint-plugin-jest
   - jest
@@ -14,10 +12,10 @@ env:
 # https://github.com/babel/babel-eslint
 parser: babel-eslint
 
-extends:
+ extends:
   - 'airbnb-base'
-  - 'plugin:jest/recommended'
+   - 'plugin:jest/recommended'
 
-rules:
-  no-console: 0
-  import/extensions: 0 # FIXME: remove when rule will be adjusted for new nodejs version
+ rules:
+   no-console: 0
+   import/extensions: 0 # FIXME: remove when rule will be adjusted for new nodejs version

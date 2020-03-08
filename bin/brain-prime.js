@@ -1,4 +1,3 @@
-
-import { greeting, isPrime, primeGame, playPrimeNumbersGame, counter } from "../src/index.js"
-greeting();
-playPrimeNumbersGame();
+#!/usr/bin/env node
+import { getPrimeQuiz, isPrime, question, answer } from "../games/brain-prime.js"
+getPrimeQuiz()

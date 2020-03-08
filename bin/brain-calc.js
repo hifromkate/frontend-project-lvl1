@@ -1,4 +1,3 @@
 #!/usr/bin/env node
-import { calculate, greeting, generateRandom, answer, randomElement, randomNumber, counter, userName, calcQuiz } from "../src/index.js"
-greeting();
-calculate();
+import { generateRandom, getCalcQuiz, question, answer } from "../games/brain-calc.js"
+getCalcQuiz()

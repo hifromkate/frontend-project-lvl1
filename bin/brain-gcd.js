@@ -1,3 +1,3 @@
 #!/usr/bin/env node
-import { question, answer, getGcdQuiz } from "../games/brain-gcd.js"
-getGcdQuiz();
+import { getGcdQuiz, playBrainGcd, quizCounter, userName, counter } from "../src/game-manager.js"
+playBrainGcd()

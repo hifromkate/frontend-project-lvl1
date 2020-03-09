@@ -1,4 +1,3 @@
 #!/usr/bin/env node
-
-import { playBrainGames, userName, greeting } from "../src/index.js"
+import { playBrainGames, userName } from "../src/game-manager.js"
 playBrainGames();

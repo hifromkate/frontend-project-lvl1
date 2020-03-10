@@ -1,5 +1,5 @@
 import { randomNumber } from "../src/helper-functions.js"
-let brainProgression = { question: [], answer: 0, text: "What number is missing in the progression?"}
+let brainProgression = { text: "What number is missing in the progression?"}
 let arithmeticProgression = [];
 
 

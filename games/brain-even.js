@@ -3,7 +3,7 @@ import readlineSync from "readline-sync";
 
 let question;
 let answer;
-let brainEven = { question: 0, answer: "something", text: "Answer \"yes\" if the number is even, otherwise answer \"no\"." }
+let brainEven = { text: "Answer \"yes\" if the number is even, otherwise answer \"no\"." }
 const isEven = (number) => (number % 2 === 0);
 
 const getEvenQuiz = () => {

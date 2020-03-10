@@ -4,8 +4,6 @@
    } from "../src/helper-functions.js"
 
    let brainCalc = {
-     question: "",
-     answer: 0,
      text: "What is the result of the expression?"
    }
 

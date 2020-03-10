@@ -1,6 +1,6 @@
 import { randomNumber } from "../src/helper-functions.js"
 
-let brainPrime = { question: 0, answer: 0, text: "Answer \"yes\" if given number is prime. Otherwise answer \"no\"." }
+let brainPrime = { text: "Answer \"yes\" if given number is prime. Otherwise answer \"no\"." }
 
 const isPrime = (number) => {
   if (number < 2) {

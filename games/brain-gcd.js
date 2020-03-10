@@ -1,6 +1,6 @@
 import { randomNumber } from "../src/helper-functions.js"
 
-let brainGcd = { question: "", answer: 0, text: "Find the greatest common divisor of given numbers."}
+let brainGcd = { text: "Find the greatest common divisor of given numbers."}
 
 const findAllDivisors = (number) => {
   const allDivisors = [];

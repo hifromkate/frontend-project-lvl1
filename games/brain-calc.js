@@ -1,44 +1,35 @@
-   import {
-     randomNumber,
-     randomElement
-   } from "../src/helper-functions.js"
+import { randomNumber, randomElement } from '../src/helper-functions.js';
 
-   let brainCalc = {
-     text: "What is the result of the expression?"
-   }
+const brainCalc = {
+  text: 'What is the result of the expression?',
+};
 
-   const generateRandom = () => {
+const generateRandom = () => {
+  const firstRandomInt = randomNumber(1, 200);
+  const secondRandomInt = randomNumber(1, 200);
+  const mathSigns = ['+', '-', '*'];
+  const randomSign = randomElement(mathSigns);
 
-     const firstRandomInt = randomNumber(1, 200)
-     const secondRandomInt = randomNumber(1, 200)
-     const mathSigns = ["+", "-", "*"]
-     const randomSign = randomElement(mathSigns)
+  if (randomSign === '+') {
+    brainCalc.answer = firstRandomInt + secondRandomInt;
+    brainCalc.question = `${firstRandomInt} + ${secondRandomInt}`;
+  } else if (randomSign === '-') {
+    if (firstRandomInt >= secondRandomInt) {
+      brainCalc.answer = firstRandomInt - secondRandomInt;
+      brainCalc.question = `${firstRandomInt} - ${secondRandomInt}`;
+    } else {
+      brainCalc.answer = secondRandomInt - firstRandomInt;
+      brainCalc.question = `${secondRandomInt} - ${firstRandomInt}`;
+    }
+  } else if (randomSign === '*') {
+    brainCalc.answer = firstRandomInt * secondRandomInt;
+    brainCalc.question = `${firstRandomInt} * ${secondRandomInt}`;
+  }
+};
 
-     if (randomSign === "+") {
-       brainCalc.answer = firstRandomInt + secondRandomInt
-       brainCalc.question = `${firstRandomInt} + ${secondRandomInt}`;
-     } else if (randomSign === "-") {
-       if (firstRandomInt >= secondRandomInt) {
-         brainCalc.answer = firstRandomInt - secondRandomInt;
-         brainCalc.question = `${firstRandomInt} - ${secondRandomInt}`;
-       } else {
-         brainCalc.answer = secondRandomInt - firstRandomInt
-         brainCalc.question = `${secondRandomInt} - ${firstRandomInt}`;
-       }
-     } else if (randomSign === "*") {
-       brainCalc.answer = firstRandomInt * secondRandomInt
-       brainCalc.question = `${firstRandomInt} * ${secondRandomInt}`;
-     }
-   }
+const getCalcQuiz = () => {
+  generateRandom();
+  return brainCalc;
+};
 
-
-   const getCalcQuiz = () => {
-     generateRandom()
-     return brainCalc;
-   }
-
-   export {
-     generateRandom,
-     getCalcQuiz,
-     brainCalc
-   }
+export { generateRandom, getCalcQuiz, brainCalc };

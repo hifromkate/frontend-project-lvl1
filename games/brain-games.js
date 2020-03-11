@@ -1,6 +1,6 @@
 const getBrainGames = () => {
-  const text = "Welcome to the Brain Games";
+  const text = 'Welcome to the Brain Games';
   return text;
-}
+};
 
-export { getBrainGames }
+export default getBrainGames;

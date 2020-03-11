@@ -53,6 +53,7 @@ const evenQuiz = () => {
     counter += 1;
   } else {
     counter = 0;
+    console.log(`${answer} is the wrong answer ;(`)
   }
 }
 

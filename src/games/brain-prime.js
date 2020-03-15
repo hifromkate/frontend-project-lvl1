@@ -1,4 +1,4 @@
-import { randomNumber } from '../src/helper-functions.js';
+import { randomNumber } from '../helper-functions.js';
 
 const brainPrime = { text: 'Answer \'yes\' if given number is prime. Otherwise answer \'no\'.' };
 

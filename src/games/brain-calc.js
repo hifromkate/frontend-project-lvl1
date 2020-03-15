@@ -1,4 +1,4 @@
-import { randomNumber, randomElement } from '../src/helper-functions.js';
+import { randomNumber, randomElement } from '../helper-functions.js';
 
 const brainCalc = {
   text: 'What is the result of the expression?',

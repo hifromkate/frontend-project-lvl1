@@ -1,10 +1,10 @@
 import readlineSync from 'readline-sync';
 
-import { brainEven, getEvenQuiz } from '../games/brain-even.js';
-import { brainCalc, getCalcQuiz } from '../games/brain-calc.js';
-import { brainGcd, getGcdQuiz } from '../games/brain-gcd.js';
-import { getPrimeQuiz, brainPrime } from '../games/brain-prime.js';
-import { brainProgression, getProgressionQuiz } from '../games/brain-progression.js';
+import { brainEven, getEvenQuiz } from './games/brain-even.js';
+import { brainCalc, getCalcQuiz } from './games/brain-calc.js';
+import { brainGcd, getGcdQuiz } from './games/brain-gcd.js';
+import { getPrimeQuiz, brainPrime } from './games/brain-prime.js';
+import { brainProgression, getProgressionQuiz } from './games/brain-progression.js';
 
 let counter = 0;
 let userName;

@@ -1,4 +1,4 @@
-import { randomNumber } from '../src/helper-functions.js';
+import { randomNumber } from '../helper-functions.js';
 
 const brainGcd = { text: 'Find the greatest common divisor of given numbers.' };
 

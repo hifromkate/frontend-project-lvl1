@@ -1,4 +1,4 @@
-import { randomNumber } from '../src/helper-functions.js';
+import { randomNumber } from '../helper-functions.js';
 
 const brainProgression = { text: 'What number is missing in the progression?' };
 let arithmeticProgression = [];

@@ -17,7 +17,6 @@ const flow = (game, description) => {
     } else {
       console.log(`${usersAnswer} is the wrong answer ;( ${answer} is the right one. Let's try again, ${userName}!`);
       counter = 0;
-      return;
     }
   } while (counter > 0 && counter < 3);
   if (counter === 3) {

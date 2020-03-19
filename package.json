@@ -1,11 +1,13 @@
 {
   "name": "frontend-project-lvl1",
   "version": "1.0.0",
-  "description": "",
-  "main": "src/index.js",
+  "description": "Hexlet project",
+  "main": "src/game-manager.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+    "build": "cross-env NODE_ENV=production babel src --out-dir dist --source-maps inline",
+    "prepublishOnly": "npm run build",
+    "eslint": "eslint ."
+},
   "type": "module",
   "repository": {
     "type": "git",
@@ -19,7 +21,7 @@
     "brain-progression": "bin/brain-progression.js",
     "brain-prime": "bin/brain-prime.js"
   },
-  "author": "",
+  "author": "Kate Kovalyova",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/notimetoanalyse/frontend-project-lvl1/issues"

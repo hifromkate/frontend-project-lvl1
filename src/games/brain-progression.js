@@ -1,6 +1,7 @@
 import { randomNumber } from '../helper-functions.js';
+import flow from '../game-manager.js';
 
-const brainProgression = { text: 'What number is missing in the progression?' };
+const description = 'What number is missing in the progression?';
 let arithmeticProgression = [];
 
 
@@ -18,20 +19,13 @@ const hideANumber = () => {
   const arr = arithmeticProgression;
   const arrLength = arr.length - 1;
   const randomIndex = randomNumber(0, arrLength);
-  brainProgression.answer = arr[randomIndex];
-
+  const answer = arr[randomIndex];
   arr[randomIndex] = '..';
-  brainProgression.question = [arr];
+  const question = [arr];
   arithmeticProgression = [];
+  return [question, answer];
 };
 
-const getProgressionQuiz = () => {
-  hideANumber();
-  return brainProgression;
-};
+const playProgression = () => flow(hideANumber, description);
 
-export {
-  brainProgression,
-  getProgressionQuiz,
-  hideANumber,
-};
+export default playProgression;

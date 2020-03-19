@@ -1,73 +1,28 @@
 import readlineSync from 'readline-sync';
 
-import { brainEven, getEvenQuiz } from './games/brain-even.js';
-import { brainCalc, getCalcQuiz } from './games/brain-calc.js';
-import { brainGcd, getGcdQuiz } from './games/brain-gcd.js';
-import { getPrimeQuiz, brainPrime } from './games/brain-prime.js';
-import { brainProgression, getProgressionQuiz } from './games/brain-progression.js';
-
-let counter = 0;
-let userName;
-
-const greeting = () => {
-  console.log('Welcome to the Brain Games!');
-  userName = readlineSync.question('May I Have your name? ');
+const flow = (game, description) => {
+  let counter = 0;
+  let usersAnswer;
+  console.log('Welcome to the Brain Games!\n');
+  const userName = readlineSync.question('May I Have your name? ');
   console.log(`Hello ${userName}!`);
-};
-
-
-const playGame = (game, quiz) => {
-  greeting();
-  console.log(game.text);
-
+  console.log(description);
   do {
-    quiz();
-    console.log(`Question: ${game.question}`);
-    const usersAnswer = readlineSync.question('Your answer: ');
-    if (game.answer === usersAnswer) {
+    const [question, answer] = game()
+    console.log(`Question: ${question}`);
+    usersAnswer = readlineSync.question('Your answer: ');
+    if (answer == usersAnswer) {
       console.log('Correct!');
       counter += 1;
     } else {
-      console.log(`${usersAnswer} is the wrong answer ;( ${game.answer} is the right one. Let's try again, ${userName}!`);
+      console.log(`${usersAnswer} is the wrong answer ;( ${answer} is the right one. Let's try again, ${userName}!`);
       counter = 0;
+      return;
     }
   } while (counter > 0 && counter < 3);
-
   if (counter === 3) {
     console.log(`Congratulations, ${userName}!`);
   }
 };
 
-const playBrainGames = () => {
-  greeting();
-};
-
-const playBrainCalc = () => {
-  playGame(brainCalc, getCalcQuiz);
-};
-
-const playBrainEven = () => {
-  playGame(brainEven, getEvenQuiz);
-};
-
-const playBrainGcd = () => {
-  playGame(brainGcd, getGcdQuiz);
-};
-
-const playBrainPrime = () => {
-  playGame(brainPrime, getPrimeQuiz);
-};
-
-const playBrainProgression = () => {
-  playGame(brainProgression, getProgressionQuiz);
-};
-
-export {
-  playBrainGames,
-  playBrainEven,
-  playBrainCalc,
-  playGame,
-  playBrainGcd,
-  playBrainPrime,
-  playBrainProgression,
-};
+export default flow;

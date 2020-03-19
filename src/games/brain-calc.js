@@ -1,35 +1,35 @@
 import { randomNumber, randomElement } from '../helper-functions.js';
+import flow from '../game-manager.js';
 
-const brainCalc = {
-  text: 'What is the result of the expression?',
-};
+const description = 'What is the result of the expression?';
 
-const generateRandom = () => {
+const getCalcQuiz = () => {
+  let question;
+  let answer;
   const firstRandomInt = randomNumber(1, 200);
   const secondRandomInt = randomNumber(1, 200);
   const mathSigns = ['+', '-', '*'];
   const randomSign = randomElement(mathSigns);
 
   if (randomSign === '+') {
-    brainCalc.answer = firstRandomInt + secondRandomInt;
-    brainCalc.question = `${firstRandomInt} + ${secondRandomInt}`;
+    answer = firstRandomInt + secondRandomInt;
+    question = `${firstRandomInt} + ${secondRandomInt}`;
   } else if (randomSign === '-') {
     if (firstRandomInt >= secondRandomInt) {
-      brainCalc.answer = firstRandomInt - secondRandomInt;
-      brainCalc.question = `${firstRandomInt} - ${secondRandomInt}`;
+      answer = firstRandomInt - secondRandomInt;
+      question = `${firstRandomInt} - ${secondRandomInt}`;
     } else {
-      brainCalc.answer = secondRandomInt - firstRandomInt;
-      brainCalc.question = `${secondRandomInt} - ${firstRandomInt}`;
+      answer = secondRandomInt - firstRandomInt;
+      question = `${secondRandomInt} - ${firstRandomInt}`;
     }
   } else if (randomSign === '*') {
-    brainCalc.answer = firstRandomInt * secondRandomInt;
-    brainCalc.question = `${firstRandomInt} * ${secondRandomInt}`;
+    answer = firstRandomInt * secondRandomInt;
+    question = `${firstRandomInt} * ${secondRandomInt}`;
   }
+  return [question, answer];
 };
 
-const getCalcQuiz = () => {
-  generateRandom();
-  return brainCalc;
-};
 
-export { getCalcQuiz, brainCalc };
+const playBrainCalc = () => flow(getCalcQuiz, description);
+
+export default playBrainCalc;

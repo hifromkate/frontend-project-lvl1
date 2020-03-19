@@ -1,6 +1,7 @@
 import { randomNumber } from '../helper-functions.js';
+import flow from '../game-manager.js';
 
-const brainPrime = { text: 'Answer \'yes\' if given number is prime. Otherwise answer \'no\'.' };
+const description = 'Answer \'yes\' if given number is prime. Otherwise answer \'no\'.';
 
 const isPrime = (number) => {
   if (number < 2) {
@@ -15,8 +16,11 @@ const isPrime = (number) => {
 };
 
 const getPrimeQuiz = () => {
-  brainPrime.question = randomNumber(1, 500);
-  brainPrime.answer = isPrime(brainPrime.question) ? 'yes' : 'no';
-  return brainPrime;
+  const question = randomNumber(1, 500);
+  const answer = isPrime(question) ? 'yes' : 'no';
+  return [question, answer];
 };
-export { getPrimeQuiz, isPrime, brainPrime };
+
+const playPrime = () => flow(getPrimeQuiz, description);
+
+export default playPrime;

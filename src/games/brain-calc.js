@@ -32,4 +32,4 @@ const getCalcQuiz = () => {
   return brainCalc;
 };
 
-export { generateRandom, getCalcQuiz, brainCalc };
+export { getCalcQuiz, brainCalc };

@@ -8,7 +8,7 @@ const flow = (game, description) => {
   console.log(`Hello ${userName}!`);
   console.log(description);
   do {
-    const [question, answer] = game()
+    const [question, answer] = game();
     console.log(`Question: ${question}`);
     usersAnswer = readlineSync.question('Your answer: ');
     if (answer == usersAnswer) {

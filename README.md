@@ -3,9 +3,10 @@
 
 [![Actions Status](https://github.com/notimetoanalyse/frontend-project-lvl1/workflows/Node.js%20CI/badge.svg)](https://github.com/notimetoanalyse/frontend-project-lvl1/actions?query=workflow%3A"Node.js+CI")
 
-### Frontend-Project for Hexlet.io
+# Frontend-Project for Hexlet.io
 
 # Videos
+
 ## Brain-games. Welcome to the game!
 https://asciinema.org/a/DyUkMMjBIgY14nZwoztpYcpqs
 ## Brain-even game. Player is asked to tell if the number is even or odd.

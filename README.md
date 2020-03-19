@@ -19,7 +19,7 @@ https://asciinema.org/a/fdwsCkSQY7MXsblVaENnR0GxL
 Player is asked to solve an expression.
 https://asciinema.org/a/L3qhPDTZv94dUr5VvzMINzjWA
 
-## Brain-gcd game. 
+### Brain-gcd game. 
 Player is asked to find greatest common divisor of two numbers.
 https://asciinema.org/a/QaiTQKeNbgG2JqftuaActFkey
 

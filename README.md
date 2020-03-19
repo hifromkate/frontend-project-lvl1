@@ -28,5 +28,5 @@ Player must find a missing number in a progression.
 https://asciinema.org/a/R548tiB136JhqC4Mcp1iDmFt3
 
 ## Brain-prime game. 
-Player must tell if the number is prime or not.
+Player must tell if a number is prime or not.
 https://asciinema.org/a/jk8cU0BnfYre9aiaW6DtJkCPi

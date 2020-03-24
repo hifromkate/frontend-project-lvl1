@@ -13,7 +13,8 @@ https://asciinema.org/a/DyUkMMjBIgY14nZwoztpYcpqs
 
 ### Brain-even game. 
 Player is asked to tell if the number is even or odd.
-https://asciinema.org/a/fdwsCkSQY7MXsblVaENnR0GxL
+<a href="https://asciinema.org/a/fdwsCkSQY7MXsblVaENnR0GxL"><img src="https://asciinema.org/a/14.png" width="836"/></a>
+
 
 ### Brain-calc game. 
 Player is asked to solve an expression.
@@ -25,7 +26,8 @@ https://asciinema.org/a/QaiTQKeNbgG2JqftuaActFkey
 
 ### Brain-progression game. 
 Player must find a missing number in a progression.
-https://asciinema.org/a/R548tiB136JhqC4Mcp1iDmFt3
+<a href="https://asciinema.org/a/TBOM2ctOkYGbVF3j0MjplFerI"><img src="https://asciinema.org/a/14.png" width="836"/></a>
+
 
 ### Brain-prime game. 
 Player must tell if a number is prime or not.

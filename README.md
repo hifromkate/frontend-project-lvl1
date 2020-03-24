@@ -7,28 +7,29 @@
 
 ## Videos
 
-### Brain-games. 
 Welcome to the game!
-https://asciinema.org/a/DyUkMMjBIgY14nZwoztpYcpqs
 
 ### Brain-even game. 
 Player is asked to tell if the number is even or odd.
-<a href="https://asciinema.org/a/fdwsCkSQY7MXsblVaENnR0GxL"><img src="https://asciinema.org/a/14.png" width="836"/></a>
+[![asciicast](https://asciinema.org/a/Mn5SgUL21kWDv7iX96mp4f29s.svg)](https://asciinema.org/a/Mn5SgUL21kWDv7iX96mp4f29s)
 
 
 ### Brain-calc game. 
 Player is asked to solve an expression.
-https://asciinema.org/a/L3qhPDTZv94dUr5VvzMINzjWA
+[![asciicast](https://asciinema.org/a/xrtjfE3X2XNs2qiSgD8yDFigx.svg)](https://asciinema.org/a/xrtjfE3X2XNs2qiSgD8yDFigx)
+
 
 ### Brain-gcd game. 
 Player is asked to find greatest common divisor of two numbers.
-https://asciinema.org/a/QaiTQKeNbgG2JqftuaActFkey
+[![asciicast](https://asciinema.org/a/jvc8yDv7HgJQZU5Olsjpmd9eB.svg)](https://asciinema.org/a/jvc8yDv7HgJQZU5Olsjpmd9eB)
+
 
 ### Brain-progression game. 
 Player must find a missing number in a progression.
-<a href="https://asciinema.org/a/TBOM2ctOkYGbVF3j0MjplFerI"><img src="https://asciinema.org/a/14.png" width="836"/></a>
+[![asciicast](https://asciinema.org/a/TBOM2ctOkYGbVF3j0MjplFerI.svg)](https://asciinema.org/a/TBOM2ctOkYGbVF3j0MjplFerI)
 
 
 ### Brain-prime game. 
 Player must tell if a number is prime or not.
-https://asciinema.org/a/jk8cU0BnfYre9aiaW6DtJkCPi
+[![asciicast](https://asciinema.org/a/IP19TujHl9JluBs2Iga94utVr.svg)](https://asciinema.org/a/IP19TujHl9JluBs2Iga94utVr)
+

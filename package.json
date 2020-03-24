@@ -7,7 +7,7 @@
     "build": "cross-env NODE_ENV=production babel src --out-dir dist --source-maps inline",
     "prepublishOnly": "npm run build",
     "eslint": "eslint ."
-},
+  },
   "type": "module",
   "repository": {
     "type": "git",
@@ -28,6 +28,8 @@
   },
   "homepage": "https://github.com/notimetoanalyse/frontend-project-lvl1#readme",
   "dependencies": {
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.1",
     "readline-sync": "^1.4.10"
   },
   "devDependencies": {

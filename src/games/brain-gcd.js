@@ -1,34 +1,19 @@
-import { randomNumber } from '../helper-functions.js';
+import { getRandomNumber } from '../helper-functions.js';
 import flow from '../game-manager.js';
 
-const description = 'Find the greatest common divisor of given numbers.'
+const description = 'Find the greatest common divisor of given numbers.';
 
-const findAllDivisors = (number) => {
-  const allDivisors = [];
-  for (let i = 1; i <= number; i += 1) {
-    if (number % i === 0) {
-      allDivisors.push(i);
-    }
-  }
-  return allDivisors;
-};
-
-const greatestInArray = (arr) => arr.reduce((a, b) => Math.max(a, b));
+const findGcd = (int1, int2) => (int2 === 0 ? int1 : findGcd(int2, int1 % int2));
 
 const getGcdQuiz = () => {
-  const firstNumber = randomNumber(1, 300);
-  const secondNumber = randomNumber(1, 300);
-
+  const firstNumber = getRandomNumber(1, 200);
+  const secondNumber = getRandomNumber(1, 200);
   const question = `${firstNumber} ${secondNumber}`;
-
-  const divisorsOfFirst = findAllDivisors(firstNumber);
-  const divisorsOfSecond = findAllDivisors(secondNumber);
-  const commonDivisors = divisorsOfFirst.filter((value) => divisorsOfSecond.includes(value));
-  const greatestCommonDivisor = greatestInArray(commonDivisors);
+  const greatestCommonDivisor = findGcd(firstNumber, secondNumber);
   const answer = greatestCommonDivisor;
   return [question, answer];
 };
 
-const playBrainGcd = () => flow(getGcdQuiz, description);
+const startBrainGcd = () => flow(getGcdQuiz, description);
 
-export default playBrainGcd;
+export default startBrainGcd;

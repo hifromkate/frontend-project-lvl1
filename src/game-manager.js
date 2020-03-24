@@ -7,21 +7,25 @@ const flow = (game, description) => {
   const userName = readlineSync.question('May I Have your name? ');
   console.log(`Hello ${userName}!`);
   console.log(description);
-  do {
-    const [question, answer] = game();
-    console.log(`Question: ${question}`);
-    usersAnswer = readlineSync.question('Your answer: ');
-    if (answer == usersAnswer) {
-      console.log('Correct!');
-      counter += 1;
-    } else {
-      console.log(`${usersAnswer} is the wrong answer ;( ${answer} is the right one. Let's try again, ${userName}!`);
-      counter = 0;
+  for (let i = 0; i < 3; i += 1) {
+    if (counter < 3) {
+      const [question, answer] = game();
+      console.log(`Question: ${question}`);
+      usersAnswer = readlineSync.question('Your answer: ');
+      if (answer == usersAnswer) {
+        console.log('Correct!');
+        counter += 1;
+      } else {
+        console.log(`${usersAnswer} is the wrong answer ;( ${answer} is the right one. Let's try again, ${userName}!`);
+        counter = 0;
+        return;
+      }
     }
-  } while (counter > 0 && counter < 3);
+  }
   if (counter === 3) {
     console.log(`Congratulations, ${userName}!`);
   }
 };
+
 
 export default flow;

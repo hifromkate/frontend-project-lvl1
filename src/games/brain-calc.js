@@ -1,35 +1,32 @@
-import { randomNumber, randomElement } from '../helper-functions.js';
+import { getRandomNumber, getRandomElement } from '../helper-functions.js';
 import flow from '../game-manager.js';
 
 const description = 'What is the result of the expression?';
+const mathSigns = ['+', '-', '*'];
+
+const calculate = (num1, num2, sign) => {
+  switch (sign) {
+    case '+':
+      return num1 + num2;
+    case '-':
+      return num1 - num2;
+    case '*':
+      return num1 * num2;
+    default:
+      return;
+  }
+};
 
 const getCalcQuiz = () => {
-  let question;
-  let answer;
-  const firstRandomInt = randomNumber(1, 200);
-  const secondRandomInt = randomNumber(1, 200);
-  const mathSigns = ['+', '-', '*'];
-  const randomSign = randomElement(mathSigns);
-
-  if (randomSign === '+') {
-    answer = firstRandomInt + secondRandomInt;
-    question = `${firstRandomInt} + ${secondRandomInt}`;
-  } else if (randomSign === '-') {
-    if (firstRandomInt >= secondRandomInt) {
-      answer = firstRandomInt - secondRandomInt;
-      question = `${firstRandomInt} - ${secondRandomInt}`;
-    } else {
-      answer = secondRandomInt - firstRandomInt;
-      question = `${secondRandomInt} - ${firstRandomInt}`;
-    }
-  } else if (randomSign === '*') {
-    answer = firstRandomInt * secondRandomInt;
-    question = `${firstRandomInt} * ${secondRandomInt}`;
-  }
+  const firstNumber = getRandomNumber(1, 200);
+  const secondNumber = getRandomNumber(1, 200);
+  const currentSign = getRandomElement(mathSigns);
+  const question = `${firstNumber} ${currentSign} ${secondNumber}`;
+  const answer = `${calculate(firstNumber, secondNumber, currentSign)}`;
   return [question, answer];
 };
 
 
-const playBrainCalc = () => flow(getCalcQuiz, description);
+const startBrainCalc = () => flow(getCalcQuiz, description);
 
-export default playBrainCalc;
+export default startBrainCalc;

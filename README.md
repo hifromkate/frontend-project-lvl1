@@ -50,12 +50,7 @@ launch game: $ node bin/progression.js
 
 
 ### Prime game
-<<<<<<< HEAD
 
-Player has to tell if a number is prime or not.
-launch game: $ node bin/prime.js
-
-=======
 
 Player has to tell if a number is prime or not.
 launch game: $ node bin/prime.js

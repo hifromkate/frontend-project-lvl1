@@ -7,6 +7,7 @@
 
 This is the project that was completed as part of Frontend course at Hexlet.io under the mentorship of Sergey Karpuk. The project consists of five command line games that will make you rack your brain. But no worries - this is not a rocket science! :)
 
+<<<<<<< HEAD
 
 ## Games
 
@@ -15,6 +16,15 @@ This is the project that was completed as part of Frontend course at Hexlet.io u
 In the first game player has to answer either the given number is even or no.
 launch game: $ node bin/even.js
 
+=======
+## Games
+
+### Even game
+
+In the first game player has to answer either the given number is even or no.
+launch game: $ node bin/even.js
+
+>>>>>>> ab4e341d1b2675f990fae0454563189f6dcb4c9c
 [![asciicast](https://asciinema.org/a/Mn5SgUL21kWDv7iX96mp4f29s.svg)](https://asciinema.org/a/Mn5SgUL21kWDv7iX96mp4f29s)
 
 
@@ -43,8 +53,15 @@ launch game: $ node bin/progression.js
 
 
 ### Prime game
+<<<<<<< HEAD
 
 Player has to tell if a number is prime or not.
 launch game: $ node bin/prime.js
 
+=======
+
+Player has to tell if a number is prime or not.
+launch game: $ node bin/prime.js
+
+>>>>>>> ab4e341d1b2675f990fae0454563189f6dcb4c9c
 [![asciicast](https://asciinema.org/a/IP19TujHl9JluBs2Iga94utVr.svg)](https://asciinema.org/a/IP19TujHl9JluBs2Iga94utVr)

@@ -1,5 +1,5 @@
-import { getRandomNumber } from '../helper-functions.js';
-import flow from '../game-manager.js';
+import { getRandomNumber } from '../helpers.js';
+import flow from '../engine.js';
 
 const description = 'Find the greatest common divisor of given numbers.';
 
@@ -9,8 +9,7 @@ const getGcdQuiz = () => {
   const firstNumber = getRandomNumber(1, 200);
   const secondNumber = getRandomNumber(1, 200);
   const question = `${firstNumber} ${secondNumber}`;
-  const greatestCommonDivisor = findGcd(firstNumber, secondNumber);
-  const answer = greatestCommonDivisor;
+  const answer = findGcd(firstNumber, secondNumber);
   return [question, answer];
 };
 

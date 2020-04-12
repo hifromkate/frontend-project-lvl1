@@ -1,5 +1,5 @@
-import { getRandomNumber, getRandomElement } from '../helper-functions.js';
-import flow from '../game-manager.js';
+import { getRandomNumber, getRandomElement } from '../helpers.js';
+import flow from '../engine.js';
 
 const description = 'What is the result of the expression?';
 const mathSigns = ['+', '-', '*'];
@@ -25,7 +25,6 @@ const getCalcQuiz = () => {
   const answer = `${calculate(firstNumber, secondNumber, currentSign)}`;
   return [question, answer];
 };
-
 
 const startBrainCalc = () => flow(getCalcQuiz, description);
 

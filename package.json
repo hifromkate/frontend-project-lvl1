@@ -2,7 +2,7 @@
   "name": "frontend-project-lvl1",
   "version": "1.0.0",
   "description": "Hexlet project",
-  "main": "src/game-manager.js",
+  "main": "src/engine.js",
   "scripts": {
     "build": "cross-env NODE_ENV=production babel src --out-dir dist --source-maps inline",
     "prepublishOnly": "npm run build",
@@ -14,12 +14,11 @@
     "url": "git+https://github.com/notimetoanalyse/frontend-project-lvl1.git"
   },
   "bin": {
-    "brain-games": "bin/brain-games.js",
-    "brain-even": "bin/brain-even.js",
-    "brain-calc": "bin/brain-calc.js",
-    "brain-gcd": "bin/brain-gcd.js",
-    "brain-progression": "bin/brain-progression.js",
-    "brain-prime": "bin/brain-prime.js"
+    "brain-even": "bin/even.js",
+    "brain-calc": "bin/calc.js",
+    "brain-gcd": "bin/gcd.js",
+    "brain-progression": "bin/progression.js",
+    "brain-prime": "bin/prime.js"
   },
   "author": "Kate Kovalyova",
   "license": "ISC",

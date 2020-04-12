@@ -1,5 +1,5 @@
-import { getRandomNumber } from '../helper-functions.js';
-import flow from '../game-manager.js';
+import { getRandomNumber } from '../helpers.js';
+import flow from '../engine.js';
 
 const description = 'Answer \'yes\' if given number is prime. Otherwise answer \'no\'.';
 

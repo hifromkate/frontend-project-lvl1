@@ -1,5 +1,5 @@
-import { getRandomNumber } from '../helper-functions.js';
-import flow from '../game-manager.js';
+import { getRandomNumber } from '../helpers.js';
+import flow from '../engine.js';
 
 const isEven = (number) => (number % 2 === 0);
 const description = 'Answer \'yes\' if the number is even, otherwise answer \'no\'.';

@@ -7,7 +7,6 @@
 
 This is the project that was completed as part of Frontend course at Hexlet.io under the mentorship of Sergey Karpuk. The project consists of five command line games that will make you rack your brain. But no worries - this is not a rocket science! :)
 
-To install games:  npm i frontend-project-lvl1-notimetoanalyse
 
 ## Games
 

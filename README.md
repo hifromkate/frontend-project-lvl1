@@ -13,7 +13,7 @@ This is the project that was completed as part of Frontend course at Hexlet.io u
 
 ### Even game
 
-In the first game player has to answer either the given number is even or no.
+In the first game player has to answer either the given number is even or no.<br>
 Launch game: **$ node bin/even.js**
 
 [![asciicast](https://asciinema.org/a/Mn5SgUL21kWDv7iX96mp4f29s.svg)](https://asciinema.org/a/Mn5SgUL21kWDv7iX96mp4f29s)
@@ -21,7 +21,7 @@ Launch game: **$ node bin/even.js**
 
 ### Calc game
 
-In second game player has to solve an expression. <br><br>
+In second game player has to solve an expression. <br>
 Launch game: **$ node bin/calc.js**
 
 [![asciicast](https://asciinema.org/a/xrtjfE3X2XNs2qiSgD8yDFigx.svg)](https://asciinema.org/a/xrtjfE3X2XNs2qiSgD8yDFigx)
@@ -29,7 +29,7 @@ Launch game: **$ node bin/calc.js**
 
 ### GCD game
 
-Player is asked to find a greatest common divisor of two numbers. <br><br>
+Player is asked to find a greatest common divisor of two numbers. <br>
 Launch game: **$ node bin/gcd.js**
 
 [![asciicast](https://asciinema.org/a/jvc8yDv7HgJQZU5Olsjpmd9eB.svg)](https://asciinema.org/a/jvc8yDv7HgJQZU5Olsjpmd9eB)
